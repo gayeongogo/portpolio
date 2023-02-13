@@ -16,39 +16,57 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<link rel="stylesheet" href="./css/jquery.fullpage.css">
 	<link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+	<script src="./js/jquery.fullpage.extensions.min.js"></script>
 	<script src="./js/script.js" defer></script>
+	
+
 </head>
 <body>
-	<div class="home">
-		<div class="container">
-			<span class="logo">LOGO</span>
-			<span class="fe">FRONTEND DEVELOPER</span>
-			<ul class="menu">
-				<li><a href="">HOME</a></li>
-				<li><a href="">ABOUT</a></li>
-				<li><a href="">SKILL</a></li>
-				<li><a href="">PROJECT</a></li>
-				<li><a href="">CONTACT</a></li>
-			</ul>
-			<div class="left-line ln"></div>
-			<div class="right-line ln"></div>
-			<div class="top-line ln"></div>
-			<div class="bottom-line ln"></div>
-			<div class="home-main">
-				<p class="home-desc">
-					안녕하세요 :)<br>
-					어쩌구<br>
-					고가연입니다
-				</p>
-				<button class="home-btn">MORE</button>
-				<div class="mainImg cir">main</div>
-				<div class="yellow cir"></div>
-				<div class="purple cir"></div>
-				<div class="green cir"></div>
+	<div id="fullpage">
+		<div class="section">
+			<div class="home">
+				<div class="container">
+					<div class="logo"></div>
+					<div class="fe">FRONT-END DEVELOPER</div>
+					<div class="menu">
+						<ul>
+							<li data-menuanchor="section2"><a href="#section2">ABOUT</a></li>
+							<li data-menuanchor="section3"><a href="#section3">SKILL</a></li>
+							<li data-menuanchor="section4"><a href="#section4">PROJECT</a></li>
+							<li data-menuanchor="section5"><a href="#section5">CONTACT</a></li>
+						</ul>
+					</div>
+					<div class="left-line ln"></div>
+					<div class="right-line ln"></div>
+					<div class="top-line ln"></div>
+					<div class="bottom-line ln"></div>
+					<div class="home-main">
+						<p class="home-desc">
+							안녕하세요 :)<br>
+							어쩌구<br>
+							고가연입니다
+						</p>
+						<button class="home-btn">MORE</button>
+						<div class="mainImg cir">main</div>
+						<div class="yellow cir"></div>
+						<div class="purple cir"></div>
+						<div class="green cir"></div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
 	</div>
+	
 </body>

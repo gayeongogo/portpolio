@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap');
 
 $pink: #FFC4C4;
 $white: #FFFFFF;
@@ -8,7 +9,8 @@ $yellow: #F8FDBD;
 $dark-blue: #343F56;
 
 .container{
-    margin: 80px;
+    width: 100%;
+    height: 100%;
     background: rgba(0,0,0,.3);
     position: relative;
 }
@@ -25,12 +27,41 @@ $dark-blue: #343F56;
 
 .home{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: $pink;
     overflow: hidden;
     color: $white;
-    a{
-        color: $white;
+    padding: 80px;
+    box-sizing: border-box;
+    .menu{
+        position: absolute;
+        top: -13px;
+        right: 0;
+        ul{
+            display: flex;
+            li{
+                padding-left: 25px;
+                a{
+                    font-size: 20px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .logo{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: url(../images/logo.png) no-repeat center center/100%;
+        position: absolute;
+        top: -50px;
+        
+    }
+    .fe{
+        display: inline-block;
+        position: absolute;
+        bottom: -18px;
+        font-size: 32px;
     }
     .mainImg{
         width: 320px;
@@ -52,7 +83,7 @@ $dark-blue: #343F56;
         height: 40px;
         background: $green;
     }
-    .bottom-line{
+    /* .bottom-line{
         width: 80%;
         height: 2px;
         bottom: 0;
@@ -75,7 +106,7 @@ $dark-blue: #343F56;
         height: 650px;
         bottom: 50px;
         left: 0;
-    }
+    } */
     &-main{
         
     }

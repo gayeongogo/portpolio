@@ -1,5 +1,71 @@
-#main {
+@charset "UTF-8";
+.container {
+  margin: 80px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.ln {
+  background: #FFFFFF;
+  position: absolute;
+}
+
+.cir {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.home {
   width: 100%;
   height: 100vh;
   background: #FFC4C4;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+.home a {
+  color: #FFFFFF;
+}
+.home .mainImg {
+  width: 320px;
+  height: 320px;
+  background: url(../images/인생.png) no-repeat center center/100%;
+}
+.home .yellow {
+  width: 267px;
+  height: 267px;
+  background: #F8FDBD;
+}
+.home .purple {
+  width: 92px;
+  height: 92px;
+  background: #B1AFFF;
+}
+.home .green {
+  width: 40px;
+  height: 40px;
+  background: #C8FFD4;
+}
+.home .bottom-line {
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+}
+.home .top-line {
+  width: 800px;
+  height: 2px;
+  top: 0;
+  left: 80px;
+}
+.home .right-line {
+  width: 2px;
+  height: 700px;
+  bottom: 0;
+  right: 0;
+}
+.home .left-line {
+  width: 2px;
+  height: 650px;
+  bottom: 50px;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */

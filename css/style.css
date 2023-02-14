@@ -3,18 +3,14 @@
 .container {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
   position: relative;
-}
-
-.ln {
-  background: #FFFFFF;
-  position: absolute;
+  border: 2px solid #FFFFFF;
 }
 
 .cir {
   border-radius: 50%;
   display: inline-block;
+  position: absolute;
 }
 
 .home {
@@ -23,79 +19,95 @@
   background: #FFC4C4;
   overflow: hidden;
   color: #FFFFFF;
-  padding: 80px;
+  padding: 100px;
   box-sizing: border-box;
-  /* .bottom-line{
-      width: 80%;
-      height: 2px;
-      bottom: 0;
-      right: 0;
-  }
-  .top-line{
-      width: 800px;
-      height: 2px;
-      top: 0;
-      left: 80px;
-  }
-  .right-line{
-      width: 2px;
-      height: 700px;
-      bottom: 0;
-      right: 0;
-  }
-  .left-line{
-      width: 2px;
-      height: 650px;
-      bottom: 50px;
-      left: 0;
-  } */
 }
-.home .menu {
+.home-menu {
+  background: #FFC4C4;
+  padding: 0 10px;
   position: absolute;
-  top: -13px;
-  right: 0;
+  top: -17px;
+  right: -17px;
 }
-.home .menu ul {
+.home-menu ul {
   display: flex;
 }
-.home .menu ul li {
+.home-menu ul li {
   padding-left: 25px;
 }
-.home .menu ul li a {
-  font-size: 20px;
+.home-menu ul li:first-child {
+  padding-left: 0;
+}
+.home-menu ul li a {
+  font-size: 26px;
   color: #FFFFFF;
 }
 .home .logo {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: url(../images/logo.png) no-repeat center center/100%;
+  width: 130px;
+  height: 130px;
+  background: url(../images/logo.jpg) no-repeat center center/100%;
   position: absolute;
-  top: -50px;
+  top: -65px;
+  left: -19px;
 }
 .home .fe {
   display: inline-block;
   position: absolute;
-  bottom: -18px;
-  font-size: 32px;
+  bottom: -23px;
+  left: -19px;
+  font-size: 36px;
+  background: #FFC4C4;
+  padding: 0 10px;
 }
-.home .mainImg {
+.home .c-main {
   width: 320px;
   height: 320px;
   background: url(../images/인생.png) no-repeat center center/100%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.home .yellow {
-  width: 267px;
-  height: 267px;
+.home .c-yellow {
+  width: 280px;
+  height: 280px;
   background: #F8FDBD;
+  top: 16%;
+  left: 11%;
 }
-.home .purple {
-  width: 92px;
-  height: 92px;
+.home .c-purple {
+  width: 100px;
+  height: 100px;
   background: #B1AFFF;
+  top: 10%;
+  right: 11%;
 }
-.home .green {
-  width: 40px;
-  height: 40px;
+.home .c-green {
+  width: 50px;
+  height: 50px;
   background: #C8FFD4;
+  bottom: 11%;
+  left: 11%;
+}
+.home-main-desc {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 26%;
+  transform: translate(0, -50%);
+}
+.home-main-text {
+  font-family: "NanumSquareExtraBold";
+  font-size: 3.5em;
+}
+.home-main-btn {
+  color: #FFFFFF;
+  background: #FF6060;
+  border: none;
+  border-radius: 15px;
+  font-size: 30px;
+  padding: 5px 30px;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

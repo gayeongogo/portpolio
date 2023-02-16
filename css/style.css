@@ -94,9 +94,8 @@
 .home-main-desc {
   display: inline-block;
   position: absolute;
-  top: 50%;
+  top: 34%;
   right: 26%;
-  transform: translate(0, -50%);
 }
 .home-main-text {
   font-family: "NanumSquareExtraBold";
@@ -109,5 +108,7 @@
   border-radius: 15px;
   font-size: 30px;
   padding: 5px 30px;
-  margin-top: 20px;
+  position: absolute;
+  top: 210px;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */

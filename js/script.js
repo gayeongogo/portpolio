@@ -10,10 +10,21 @@ $(function () {
 
 //타이핑
 
-    $('.home-main-text').typed({
-        strings:["안녕하세요"], //[]안 반점 기준 지워지고 다시 타이핑
-        typeSpeed:300,
-        backDelay:1000,
-        loop: true,
-        cursorChar:" "
-    });
+/* let text = document.querySelector('home-main-text');
+let content = "안녕하세요 :)\n어쩌구\n고가연입니다.";
+let contentIndex = 0;
+
+let typing = function() {
+    text.innerHTML += content[contentIndex];
+    contentIndex++;
+    if(content[contentIndex] === "\n") {
+        text.innerHTML += "<br />";
+        contentIndex++;
+    }
+    if(contentIndex > content.length) {
+        text.textContent = "";
+        contentIndex = 0;
+    }
+}
+
+setInterval(typing, 200); */

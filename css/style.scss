@@ -46,6 +46,11 @@ $dark-blue: #343F56;
                 a{
                     font-size: 26px;
                     color: $white;
+                    transition: .3s;
+                    &:hover{
+                        color: $coral;
+                        transition: .3s;
+                    }
                 }
             }
         }
@@ -74,17 +79,18 @@ $dark-blue: #343F56;
         height: 320px;
         background: url(../images/인생.png) no-repeat center center/100%;
         position: absolute;
-        top: 50%;
-        left: 25%;
-        transform: translate(0, -50%);
+        top: 22%;
+        left: 22%;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
     }
     .c-yellow{
         width: 280px;
         height: 280px;
         background: $yellow;
-        top: 16%;
-        left: 11%;
+        top: 27%;
+        left: 24%;
+        opacity: 0;
+        transition: ease-out;
     }
     .c-purple{
         width: 100px;
@@ -105,7 +111,7 @@ $dark-blue: #343F56;
             display: inline-block;
             position: absolute;
             top: 34%;
-            right: 26%;
+            left: 54%;
         }
         &-text{
             font-family: 'NanumSquareExtraBold';
@@ -121,7 +127,10 @@ $dark-blue: #343F56;
             position: absolute;
             top: 210px;
             left: 0;
-            
+            cursor: pointer;
+            &:active{
+                scale: 0.98;
+            }
         }
     }
 

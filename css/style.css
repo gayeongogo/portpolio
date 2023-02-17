@@ -41,6 +41,11 @@
 .home-menu ul li a {
   font-size: 26px;
   color: #FFFFFF;
+  transition: 0.3s;
+}
+.home-menu ul li a:hover {
+  color: #FF6060;
+  transition: 0.3s;
 }
 .home .logo {
   display: inline-block;
@@ -65,17 +70,18 @@
   height: 320px;
   background: url(../images/인생.png) no-repeat center center/100%;
   position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(0, -50%);
+  top: 22%;
+  left: 22%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .home .c-yellow {
   width: 280px;
   height: 280px;
   background: #F8FDBD;
-  top: 16%;
-  left: 11%;
+  top: 27%;
+  left: 24%;
+  opacity: 0;
+  transition: ease-out;
 }
 .home .c-purple {
   width: 100px;
@@ -95,7 +101,7 @@
   display: inline-block;
   position: absolute;
   top: 34%;
-  right: 26%;
+  left: 54%;
 }
 .home-main-text {
   font-family: "NanumSquareExtraBold";
@@ -111,4 +117,8 @@
   position: absolute;
   top: 210px;
   left: 0;
+  cursor: pointer;
+}
+.home-main-btn:active {
+  scale: 0.98;
 }/*# sourceMappingURL=style.css.map */

@@ -118,18 +118,30 @@ $dark-blue: #343F56;
             font-size: 3.5em;
         }
         &-btn{
-            color: $white;
-            background: #FF6060;
+            color: $coral;
+            background: $white;
             border: none;
             border-radius: 15px;
-            font-size: 30px;
-            padding: 5px 30px;
+            font-size: 23px;
+            padding: 10px 50px;
             position: absolute;
-            top: 210px;
+            top: 220px;
             left: 0;
+            box-shadow: 0 0.4rem rgb(233, 213, 213);
             cursor: pointer;
             &:active{
-                scale: 0.98;
+                color: white;
+                box-shadow: 0 0.2rem rgb(233, 213, 213);
+                transform: translateY(0.2rem);
+            }
+            &:hover:not(:disabled){
+                background: $coral;
+                color: white;
+                text-shadow: 0 0.1rem #bcb4b4;
+            }
+            &:disabled{
+                cursor: auto;
+                color: grey;
             }
         }
     }

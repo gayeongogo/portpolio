@@ -30,7 +30,7 @@ let typing = function() {
 
 setInterval(typing, 200);
 
-//공 움직이기
+//page1 공 움직이기
 $(document).ready(function() {
 
     $('.c-main').stop().animate({left:'28%', top:'30%',opacity:1},2000)

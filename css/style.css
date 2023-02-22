@@ -108,17 +108,29 @@
   font-size: 3.5em;
 }
 .home-main-btn {
-  color: #FFFFFF;
-  background: #FF6060;
+  color: #FF6060;
+  background: #FFFFFF;
   border: none;
   border-radius: 15px;
-  font-size: 30px;
-  padding: 5px 30px;
+  font-size: 23px;
+  padding: 10px 50px;
   position: absolute;
-  top: 210px;
+  top: 220px;
   left: 0;
+  box-shadow: 0 0.4rem rgb(233, 213, 213);
   cursor: pointer;
 }
 .home-main-btn:active {
-  scale: 0.98;
+  color: white;
+  box-shadow: 0 0.2rem rgb(233, 213, 213);
+  transform: translateY(0.2rem);
+}
+.home-main-btn:hover:not(:disabled) {
+  background: #FF6060;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+.home-main-btn:disabled {
+  cursor: auto;
+  color: grey;
 }/*# sourceMappingURL=style.css.map */

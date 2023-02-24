@@ -34,6 +34,6 @@ setInterval(typing, 200);
 $(document).ready(function() {
 
     $('.c-main').stop().animate({left:'28%', top:'30%',opacity:1},2000)
-    $('.c-yellow').stop().animate({left:'19%', top:'20%',opacity:1},2000)
+    $('.c-yellow').stop().animate({left:'16%', top:'16%',opacity:1},2000)
 });
 

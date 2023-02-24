@@ -10,8 +10,9 @@ $yellow: #F8FDBD;
 $dark-blue: #343F56;
 
 .container{
+    max-width: 1300px;
     width: 100%;
-    height: 100%;
+    height: 700px;
     position: relative;
     border: 2px solid $white;
 }
@@ -24,14 +25,18 @@ $dark-blue: #343F56;
 
 }
 
-.home{
+.section1{
     width: 100%;
     height: 100%;
     background: $pink;
     overflow: hidden;
     color: $white;
-    padding: 100px;
     box-sizing: border-box;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &-menu{
         background: $pink;
         padding: 0 10px;

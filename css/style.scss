@@ -1,16 +1,18 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap');
 
-$pink: #FFC4C4;
-$coral: #FF6060; 
+$pup1: #5E6EF5;
+$pup2: #8294F5; 
+$pup3: #C1CEFF;
+$pup4: #E8EDFF;
 $white: #FFFFFF;
-$purple: #B1AFFF;
-$green: #C8FFD4;
-$yellow: #F8FDBD;
+$yellow: #F1C848;
+$red: #F65555;
 $dark-blue: #343F56;
 
+.section{overflow: hidden;}
 .container{
-    max-width: 1300px;
+    max-width: 1400px;
     width: 100%;
     height: 700px;
     position: relative;
@@ -28,7 +30,7 @@ $dark-blue: #343F56;
 .section1{
     width: 100%;
     height: 100%;
-    background: $pink;
+    background: $pup2;
     overflow: hidden;
     color: $white;
     box-sizing: border-box;
@@ -38,7 +40,7 @@ $dark-blue: #343F56;
     align-items: center;
     justify-content: center;
     &-menu{
-        background: $pink;
+        background: $pup2;
         padding: 0 10px;
         position: absolute;
         top: -17px;
@@ -53,7 +55,7 @@ $dark-blue: #343F56;
                     color: $white;
                     transition: .3s;
                     &:hover{
-                        color: $coral;
+                        color: $red;
                         transition: .3s;
                     }
                 }
@@ -75,7 +77,7 @@ $dark-blue: #343F56;
         bottom: -23px;
         left: -19px;
         font-size: 36px;
-        background: $pink;
+        background: $pup2;
         padding: 0 10px;
     }
 
@@ -87,29 +89,6 @@ $dark-blue: #343F56;
         top: 22%;
         left: 22%;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
-    }
-    .c-yellow{
-        width: 280px;
-        height: 280px;
-        background: $yellow;
-        top: 27%;
-        left: 24%;
-        opacity: 0;
-        transition: ease-out;
-    }
-    .c-purple{
-        width: 100px;
-        height: 100px;
-        background: $purple;
-        top: 10%;
-        right: 11%;
-    }
-    .c-green{
-        width: 50px;
-        height: 50px;
-        background: $green;
-        bottom: 11%;
-        left: 11%;
     }
     &-main{
         &-desc{
@@ -123,8 +102,8 @@ $dark-blue: #343F56;
             font-size: 3.5em;
         }
         &-btn{
-            color: $coral;
-            background: $white;
+            color: $red;
+            background: $yellow;
             border: none;
             border-radius: 15px;
             font-size: 23px;
@@ -140,8 +119,7 @@ $dark-blue: #343F56;
                 transform: translateY(0.2rem);
             }
             &:hover:not(:disabled){
-                background: $coral;
-                color: white;
+                background: $white;
                 text-shadow: 0 0.1rem #bcb4b4;
             }
             &:disabled{

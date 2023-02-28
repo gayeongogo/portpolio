@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap");
+.section {
+  overflow: hidden;
+}
+
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   height: 700px;
   position: relative;
@@ -17,7 +21,7 @@
 .section1 {
   width: 100%;
   height: 100%;
-  background: #FFC4C4;
+  background: #8294F5;
   overflow: hidden;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -29,7 +33,7 @@
   justify-content: center;
 }
 .home-menu {
-  background: #FFC4C4;
+  background: #8294F5;
   padding: 0 10px;
   position: absolute;
   top: -17px;
@@ -50,7 +54,7 @@
   transition: 0.3s;
 }
 .home-menu ul li a:hover {
-  color: #FF6060;
+  color: #F65555;
   transition: 0.3s;
 }
 .home .logo {
@@ -68,7 +72,7 @@
   bottom: -23px;
   left: -19px;
   font-size: 36px;
-  background: #FFC4C4;
+  background: #8294F5;
   padding: 0 10px;
 }
 .home .c-main {
@@ -79,29 +83,6 @@
   top: 22%;
   left: 22%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.home .c-yellow {
-  width: 280px;
-  height: 280px;
-  background: #F8FDBD;
-  top: 27%;
-  left: 24%;
-  opacity: 0;
-  transition: ease-out;
-}
-.home .c-purple {
-  width: 100px;
-  height: 100px;
-  background: #B1AFFF;
-  top: 10%;
-  right: 11%;
-}
-.home .c-green {
-  width: 50px;
-  height: 50px;
-  background: #C8FFD4;
-  bottom: 11%;
-  left: 11%;
 }
 .home-main-desc {
   display: inline-block;
@@ -114,8 +95,8 @@
   font-size: 3.5em;
 }
 .home-main-btn {
-  color: #FF6060;
-  background: #FFFFFF;
+  color: #F65555;
+  background: #F1C848;
   border: none;
   border-radius: 15px;
   font-size: 23px;
@@ -132,8 +113,7 @@
   transform: translateY(0.2rem);
 }
 .home-main-btn:hover:not(:disabled) {
-  background: #FF6060;
-  color: white;
+  background: #FFFFFF;
   text-shadow: 0 0.1rem #bcb4b4;
 }
 .home-main-btn:disabled {

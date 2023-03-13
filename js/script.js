@@ -10,8 +10,8 @@ $(function () {
 
 //타이핑
 
-let text = document.querySelector('.home-main-text');
-let content = "안녕하세요 :)\n어쩌구\n고가연입니다.";
+/* let text = document.querySelector('.home-main-text');
+let content = "Hello :)\nI'm\nFront-end Developer\nGo Ga Yeon";
 let contentIndex = 0;
 
 
@@ -27,7 +27,7 @@ let typing = function() {
         contentIndex = 0;
     }
 }
-
+ */
 setInterval(typing, 200);
 
 //page1 공 움직이기

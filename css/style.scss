@@ -22,9 +22,8 @@ $ln-gray: #b9b9b9;
 
 }
 
-@mixin home-link {
+@mixin dr-df {
     border-radius: 31% 69% 37% 63% / 22% 49% 51% 78% ;
-    position: absolute;
 }
 
 /* full page */
@@ -45,7 +44,7 @@ $ln-gray: #b9b9b9;
 .header{
     position: sticky;
     width: 90%;
-    height: 90px;
+    height: 80px;
     margin: 0 auto;
     border-bottom: 1px solid $ln-gray;
     text-align: center;
@@ -141,7 +140,8 @@ $ln-gray: #b9b9b9;
         background: url(../images/인생.png) no-repeat center center /100%;
         top: 10%;
         left: 10%;
-        @include home-link;
+        position: absolute;
+        @include dr-df;
     }
     .projectLink{
         width: 200px;
@@ -150,7 +150,8 @@ $ln-gray: #b9b9b9;
         top: 25%;
         right: 10%;
         transform: rotate(40deg);
-        @include home-link;
+        position: absolute;
+        @include dr-df;
     }
     .skillLink{
         width: 150px;
@@ -159,7 +160,8 @@ $ln-gray: #b9b9b9;
         bottom: 10%;
         right: 25%;
         transform: rotate(67deg);
-        @include home-link;
+        position: absolute;
+        @include dr-df;
     }
     p{
         font-family: 'NanumSquare';
@@ -169,6 +171,36 @@ $ln-gray: #b9b9b9;
         transform: translate(-50%,0);
         font-size: 12px;
         color: $txt6;
+    }
+}
+
+/* section2 */
+.about{
+    &-main{
+        &-desc{
+            p{
+
+            }
+        }
+        &-info{
+            .infoImg{
+                width: 450px;
+                height: 450px;
+                background: url(../images/바다.jpg) no-repeat center center / 100%;
+                @include dr-df;
+                
+            }
+            .resume{
+                width: 150px;
+                height: 150px;
+                background: $green;
+                transform: rotate(67deg);
+                @include dr-df;
+                a{
+                    transform: rotate(0deg);
+                }
+            }
+        }
     }
 }
 

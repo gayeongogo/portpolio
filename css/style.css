@@ -16,7 +16,7 @@
 .header {
   position: sticky;
   width: 90%;
-  height: 90px;
+  height: 80px;
   margin: 0 auto;
   border-bottom: 1px solid #b9b9b9;
   text-align: center;
@@ -120,8 +120,8 @@
   background: url(../images/인생.png) no-repeat center center/100%;
   top: 10%;
   left: 10%;
-  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   position: absolute;
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
 }
 .home .projectLink {
   width: 200px;
@@ -130,8 +130,8 @@
   top: 25%;
   right: 10%;
   transform: rotate(40deg);
-  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   position: absolute;
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
 }
 .home .skillLink {
   width: 150px;
@@ -140,8 +140,8 @@
   bottom: 10%;
   right: 25%;
   transform: rotate(67deg);
-  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   position: absolute;
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
 }
 .home p {
   font-family: "NanumSquare";
@@ -151,4 +151,22 @@
   transform: translate(-50%, 0);
   font-size: 12px;
   color: #666666;
+}
+
+/* section2 */
+.about-main-info .infoImg {
+  width: 450px;
+  height: 450px;
+  background: url(../images/바다.jpg) no-repeat center center/100%;
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
+}
+.about-main-info .resume {
+  width: 150px;
+  height: 150px;
+  background: #D5E8E2;
+  transform: rotate(67deg);
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
+}
+.about-main-info .resume a {
+  transform: rotate(0deg);
 }/*# sourceMappingURL=style.css.map */

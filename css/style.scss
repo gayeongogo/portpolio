@@ -16,8 +16,8 @@ $ln-gray: #b9b9b9;
 
 @mixin home-cir {
     border-radius: 50%;
-    width: 260px;
-    height: 260px;
+    width: 16.2em;
+    height: 16.2em;
     filter: blur(70px);
 
 }
@@ -34,6 +34,10 @@ $ln-gray: #b9b9b9;
 
 
 /* 공통요소 */
+.body{
+    letter-spacing: -0.05em;
+}
+
 .section{
     width: 100vw;
     height: 100vh;
@@ -42,18 +46,22 @@ $ln-gray: #b9b9b9;
 }
 //header는 스크롤 위치에 따라서 section2부터 보이게 함
 .header{
-    position: sticky;
-    width: 90%;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
     height: 80px;
-    margin: 0 auto;
-    border-bottom: 1px solid $ln-gray;
     text-align: center;
+    background: $bg-ivory;
     .container{
-        width: 100%;
+        width: 90%;
         height: 100%;
+        border-bottom: 1px solid $ln-gray;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         .logo{
             font-weight: 700;
             font-size: 35px;
@@ -75,7 +83,7 @@ $ln-gray: #b9b9b9;
             ul{
                 display: flex;
                 li{
-                    font-size: 1.5rem;
+                    font-size: 1.5em;
                     color: $txt5;
                     &:last-child{
                         margin-left: 20px;
@@ -176,30 +184,91 @@ $ln-gray: #b9b9b9;
 
 /* section2 */
 .about{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    position: relative;
+    .yellowCircle{
+        @include home-cir;
+        background: $yellow;
+        position: absolute;
+        top: 8%;
+        left: 5%;
+    }
+    .blueCircle{
+        @include home-cir;
+        width: 20em;
+        height: 20em;
+        background: $blue;
+        position: absolute;
+        bottom: -5%;
+        left: 35%;
+    }
     &-main{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
         &-desc{
+            margin-top: -9em;
+            position: static;
+            z-index: 5;
             p{
-
+                font-family: 'NanumSquare';
+                padding-right: 5em;
+                &.desc1{
+                    margin-bottom: 3em;
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    color: $txt3;
+                }
+                &.desc2{
+                    font-size: 1em;
+                    color: $txt3;
+                }
             }
         }
         &-info{
+            display: flex;
             .infoImg{
-                width: 450px;
-                height: 450px;
+                width: 400px;
+                height: 400px;
+                position: relative;
+                margin-top: -10em;
+                transform: rotate(15deg);
                 background: url(../images/바다.jpg) no-repeat center center / 100%;
                 @include dr-df;
-                
+                overflow: hidden;
+                .infoDetail{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: rotate(-15deg);
+                }
             }
             .resume{
+                display: block;
                 width: 150px;
                 height: 150px;
                 background: $green;
                 transform: rotate(67deg);
                 @include dr-df;
-                a{
-                    transform: rotate(0deg);
+                position: relative;
+                margin-top: 12em;
+                .resume-text{
+                    font-family: 'NanumSquare';
+                    text-align: center;
+                    position: absolute;
+                    top: 38%;
+                    left: 28%;
+                    transform: rotate(-67deg);
+                    color: #666;
                 }
+                
             }
+            
         }
     }
 }

@@ -4,7 +4,6 @@ $(function () {
     $('#fullpage').fullpage({
         //options here
         anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
-        navigation: true,
     });
 });
 
@@ -27,13 +26,21 @@ let typing = function() {
         contentIndex = 0;
     }
 }
- */
-setInterval(typing, 200);
 
-//page1 공 움직이기
-$(document).ready(function() {
+setInterval(typing, 200); */
 
-    $('.c-main').stop().animate({left:'28%', top:'30%',opacity:1},2000)
-    $('.c-yellow').stop().animate({left:'16%', top:'16%',opacity:1},2000)
-});
 
+
+//메뉴 고정
+/* 
+const section2 = document.querySelector('.section2');
+const section2Top = section2.getBoundingClientRect().top + window.scrollY;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', function() {
+    if(this.window.scrollY>=section2Top) {
+        header.classList.add('fixed');
+    }else{
+        header.classList.remove('fixed');
+    }
+}) */

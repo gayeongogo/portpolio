@@ -12,18 +12,34 @@ $txt3: #333333;
 $txt4: #444444;
 $txt5: #555555;
 $txt6: #666666;
+$txt8: #888888;
 $ln-gray: #b9b9b9;
+$ln-light-gray: #ebebeb;
 
 @mixin home-cir {
     border-radius: 50%;
     width: 16.2em;
     height: 16.2em;
+    position: absolute;
     filter: blur(70px);
+}
 
+@mixin blue-cir {
+    background: $blue;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    filter: blur(70px);
 }
 
 @mixin dr-df {
     border-radius: 31% 69% 37% 63% / 22% 49% 51% 78% ;
+}
+
+@mixin box-df {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px $white;
 }
 
 /* full page */
@@ -36,32 +52,43 @@ $ln-gray: #b9b9b9;
 /* 공통요소 */
 .body{
     letter-spacing: -0.05em;
+    box-sizing: border-box;
 }
-
 .section{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background: $bg-ivory;
 }
-//header는 스크롤 위치에 따라서 section2부터 보이게 함
+.container{
+    max-width: 1200px;
+    width: 80%;
+    height: 100%;
+    margin: 80px auto;
+    position: relative;
+    z-index: 1;
+}
 .header{
     position: fixed;
     z-index: 999;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     text-align: center;
     background: $bg-ivory;
-    .container{
+    /* &.fixed{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left:0;
+    } */
+    &-container{
         width: 90%;
         height: 100%;
         border-bottom: 1px solid $ln-gray;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0 auto;
         .logo{
             font-weight: 700;
             font-size: 35px;
@@ -92,7 +119,6 @@ $ln-gray: #b9b9b9;
             }
         }
     }
-    
 }
 
 
@@ -102,25 +128,21 @@ $ln-gray: #b9b9b9;
     height: 100%;
     position: relative;
     .orangeCircle{
+        @include home-cir;
         background: $orange;
-        position: absolute;
         top: 28%;
         left: 38%;
-        @include home-cir;
     }
     .yellowCircle{
+        @include home-cir;
         background: $yellow;
-        position: absolute;
         bottom: 28%;
         right: 38%;
-        @include home-cir;
     }
     .blueCircle{
-        background: $blue;
-        position: absolute;
+        @include blue-cir;
         bottom: -12%;
         left: 12%;
-        @include home-cir;
     }
     &-main{
         text-align: center;
@@ -182,42 +204,36 @@ $ln-gray: #b9b9b9;
     }
 }
 
+
 /* section2 */
-.about{
-    width: 100%;
-    height: 100%;
-    margin-top: 80px;
+.section2{
     position: relative;
     .yellowCircle{
         @include home-cir;
+
         background: $yellow;
-        position: absolute;
-        top: 8%;
-        left: 5%;
+        top: 25%;
+        left: 10%;
     }
     .blueCircle{
-        @include home-cir;
-        width: 20em;
-        height: 20em;
-        background: $blue;
-        position: absolute;
-        bottom: -5%;
+        @include blue-cir;
+        bottom: -15%;
         left: 35%;
     }
-    &-main{
-        width: 70%;
+}
+.about{
+    .about-main{
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 0 auto;
+        justify-content: space-between;
+        
         &-desc{
+            flex-basis: 50%;
             margin-top: -9em;
-            position: static;
-            z-index: 5;
             p{
                 font-family: 'NanumSquare';
-                padding-right: 5em;
                 &.desc1{
                     margin-bottom: 3em;
                     font-size: 1.5em;
@@ -232,14 +248,16 @@ $ln-gray: #b9b9b9;
         }
         &-info{
             display: flex;
+            flex-basis: 30%;
             .infoImg{
+                @include dr-df;
                 width: 400px;
                 height: 400px;
                 position: relative;
-                margin-top: -10em;
+                margin: -10em -3em 0 ;
+                margin-right: -3em;
                 transform: rotate(15deg);
                 background: url(../images/바다.jpg) no-repeat center center / 100%;
-                @include dr-df;
                 overflow: hidden;
                 .infoDetail{
                     position: absolute;
@@ -249,12 +267,12 @@ $ln-gray: #b9b9b9;
                 }
             }
             .resume{
+                @include dr-df;
                 display: block;
                 width: 150px;
                 height: 150px;
                 background: $green;
                 transform: rotate(67deg);
-                @include dr-df;
                 position: relative;
                 margin-top: 12em;
                 .resume-text{
@@ -264,11 +282,86 @@ $ln-gray: #b9b9b9;
                     top: 38%;
                     left: 28%;
                     transform: rotate(-67deg);
-                    color: #666;
+                    color: $txt6;
                 }
                 
             }
             
+        }
+    }
+}
+
+/* section3 */
+.section3{
+    position: relative;
+    .pinkEle{
+        @include dr-df;
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        background: $pink;
+        width: 15em;
+        height: 15em;
+        display: inline-block;
+    }
+    /* .blueCircle{
+        
+    } */
+}
+.skill{
+    padding: 7em 0;
+    
+    &-title{
+        font-size: 2em;
+    }
+    &-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-main{
+            flex-basis: 45%;
+            .keywords{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        @include box-df;
+                        font-size: 20px;
+                        margin-left: 10px;
+                        padding: 5px 20px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+            .license{
+                @include box-df;
+                border-radius: 30px;
+                padding: 2em;
+                margin-top: 1.5em;
+                &-title{
+                    display: block;
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                }
+                ul{
+                    li{
+                        font-family: 'NanumSquare';
+                        font-size: 17px;
+                        border-bottom: 1px solid $ln-light-gray;
+                        padding: 10px 0;
+                        span{
+                            font-family: inherit;
+                            font-size: 13px;
+                            padding-left: 10px;
+                            color: $txt8;
+                        }
+                    }
+                }
+            }
+        }
+        &-detail{
+            flex-basis: 45%;
+
         }
     }
 }

@@ -8,61 +8,75 @@
 /* 공통요소 */
 .body {
   letter-spacing: -0.05em;
+  box-sizing: border-box;
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background: #FFFDF6;
 }
 
+.container {
+  max-width: 1200px;
+  width: 80%;
+  height: 100%;
+  margin: 80px auto;
+  position: relative;
+  z-index: 1;
+}
+
 .header {
   position: fixed;
   z-index: 999;
-  width: 100vw;
+  width: 100%;
   height: 80px;
   text-align: center;
   background: #FFFDF6;
+  /* &.fixed{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left:0;
+  } */
 }
-.header .container {
+.header-container {
   width: 90%;
   height: 100%;
   border-bottom: 1px solid #b9b9b9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
 }
-.header .container .logo {
+.header-container .logo {
   font-weight: 700;
   font-size: 35px;
   color: #555555;
   letter-spacing: -0.08em;
   line-height: 22px;
 }
-.header .container .menu {
+.header-container .menu {
   color: #666666;
 }
-.header .container .menu ul {
+.header-container .menu ul {
   display: flex;
 }
-.header .container .menu ul li {
+.header-container .menu ul li {
   margin-right: 100px;
 }
-.header .container .menu ul li:last-child {
+.header-container .menu ul li:last-child {
   margin-right: 0;
 }
-.header .container .side ul {
+.header-container .side ul {
   display: flex;
 }
-.header .container .side ul li {
+.header-container .side ul li {
   font-size: 1.5em;
   color: #555555;
 }
-.header .container .side ul li:last-child {
+.header-container .side ul li:last-child {
   margin-left: 20px;
 }
 
@@ -73,34 +87,34 @@
   position: relative;
 }
 .home .orangeCircle {
-  background: #FF6B00;
+  border-radius: 50%;
+  width: 16.2em;
+  height: 16.2em;
   position: absolute;
+  filter: blur(70px);
+  background: #FF6B00;
   top: 28%;
   left: 38%;
-  border-radius: 50%;
-  width: 16.2em;
-  height: 16.2em;
-  filter: blur(70px);
 }
 .home .yellowCircle {
-  background: #FFD600;
-  position: absolute;
-  bottom: 28%;
-  right: 38%;
   border-radius: 50%;
   width: 16.2em;
   height: 16.2em;
+  position: absolute;
   filter: blur(70px);
+  background: #FFD600;
+  bottom: 28%;
+  right: 38%;
 }
 .home .blueCircle {
   background: #95BFD4;
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
   position: absolute;
+  filter: blur(70px);
   bottom: -12%;
   left: 12%;
-  border-radius: 50%;
-  width: 16.2em;
-  height: 16.2em;
-  filter: blur(70px);
 }
 .home-main {
   text-align: center;
@@ -162,96 +176,163 @@
 }
 
 /* section2 */
-.about {
-  width: 100%;
-  height: 100%;
-  margin-top: 80px;
+.section2 {
   position: relative;
 }
-.about .yellowCircle {
+.section2 .yellowCircle {
   border-radius: 50%;
   width: 16.2em;
   height: 16.2em;
+  position: absolute;
   filter: blur(70px);
   background: #FFD600;
-  position: absolute;
-  top: 8%;
-  left: 5%;
+  top: 25%;
+  left: 10%;
 }
-.about .blueCircle {
+.section2 .blueCircle {
+  background: #95BFD4;
   border-radius: 50%;
-  width: 16.2em;
-  height: 16.2em;
-  filter: blur(70px);
   width: 20em;
   height: 20em;
-  background: #95BFD4;
   position: absolute;
-  bottom: -5%;
+  filter: blur(70px);
+  bottom: -15%;
   left: 35%;
 }
-.about-main {
-  width: 70%;
+
+.about .about-main {
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-between;
 }
-.about-main-desc {
+.about .about-main-desc {
+  flex-basis: 50%;
   margin-top: -9em;
-  position: static;
-  z-index: 5;
 }
-.about-main-desc p {
+.about .about-main-desc p {
   font-family: "NanumSquare";
-  padding-right: 5em;
 }
-.about-main-desc p.desc1 {
+.about .about-main-desc p.desc1 {
   margin-bottom: 3em;
   font-size: 1.5em;
   font-weight: 700;
   color: #333333;
 }
-.about-main-desc p.desc2 {
+.about .about-main-desc p.desc2 {
   font-size: 1em;
   color: #333333;
 }
-.about-main-info {
+.about .about-main-info {
   display: flex;
+  flex-basis: 30%;
 }
-.about-main-info .infoImg {
+.about .about-main-info .infoImg {
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   width: 400px;
   height: 400px;
   position: relative;
-  margin-top: -10em;
+  margin: -10em -3em 0;
+  margin-right: -3em;
   transform: rotate(15deg);
   background: url(../images/바다.jpg) no-repeat center center/100%;
-  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   overflow: hidden;
 }
-.about-main-info .infoImg .infoDetail {
+.about .about-main-info .infoImg .infoDetail {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: rotate(-15deg);
 }
-.about-main-info .resume {
+.about .about-main-info .resume {
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   display: block;
   width: 150px;
   height: 150px;
   background: #D5E8E2;
   transform: rotate(67deg);
-  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   position: relative;
   margin-top: 12em;
 }
-.about-main-info .resume .resume-text {
+.about .about-main-info .resume .resume-text {
   font-family: "NanumSquare";
   text-align: center;
   position: absolute;
   top: 38%;
   left: 28%;
   transform: rotate(-67deg);
-  color: #666;
+  color: #666666;
+}
+
+/* section3 */
+.section3 {
+  position: relative;
+  /* .blueCircle{
+
+  } */
+}
+.section3 .pinkEle {
+  border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  background: #FFDCDC;
+  width: 15em;
+  height: 15em;
+  display: inline-block;
+}
+
+.skill {
+  padding: 7em 0;
+}
+.skill-title {
+  font-size: 2em;
+}
+.skill-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-area-main {
+  flex-basis: 45%;
+}
+.skill-area-main .keywords ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-area-main .keywords ul li {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #FFFFFF;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+.skill-area-main .license {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #FFFFFF;
+  border-radius: 30px;
+  padding: 2em;
+  margin-top: 1.5em;
+}
+.skill-area-main .license-title {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.skill-area-main .license ul li {
+  font-family: "NanumSquare";
+  font-size: 17px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 0;
+}
+.skill-area-main .license ul li span {
+  font-family: inherit;
+  font-size: 13px;
+  padding-left: 10px;
+  color: #888888;
+}
+.skill-area-detail {
+  flex-basis: 45%;
 }/*# sourceMappingURL=style.css.map */

@@ -315,6 +315,8 @@
 }
 .skill-area-main .keywords ul li {
   background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   display: inline-block;
   font-size: 20px;
@@ -328,6 +330,8 @@
 }
 .skill-area-main .license {
   background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 2em;
@@ -364,6 +368,8 @@
 .skill-area-detail .card {
   flex-basis: 47%;
   background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   padding: 2em;
   border-radius: 30px;
@@ -389,4 +395,98 @@
 }
 .skill-area-detail .card ul li:last-child {
   margin-bottom: 0;
+}
+
+/* section4 */
+/* section5 */
+.section5 {
+  position: relative;
+}
+.section5 .bg {
+  width: 53em;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section5 .bg .orangeCircle {
+  border-radius: 50%;
+  width: 16.2em;
+  height: 16.2em;
+  position: absolute;
+  filter: blur(70px);
+  width: 25em;
+  height: 25em;
+  background: #FF6B00;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section5 .bg .yellowCircle {
+  border-radius: 50%;
+  width: 16.2em;
+  height: 16.2em;
+  position: absolute;
+  filter: blur(70px);
+  width: 25em;
+  height: 25em;
+  background: #FFD600;
+  bottom: 7%;
+  right: 0;
+}
+.section5 .bg .blueCircle {
+  background: #95BFD4;
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  filter: blur(70px);
+  width: 28em;
+  height: 28em;
+  bottom: 7%;
+  left: 0;
+}
+.section5 .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section5 .contact h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #FFFFFF;
+  font-size: 2.2em;
+}
+.section5 .contact-card {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em;
+}
+.section5 .contact-card-info .myName {
+  font-size: 2.2em;
+  margin-bottom: 2.5em;
+}
+.section5 .contact-card-info span {
+  font-size: 1.1em;
+  color: #888888;
+}
+.section5 .contact-card-info .phoneEmail p {
+  font-size: 1.3em;
+}
+.section5 .contact-card-info .phoneEmail .email {
+  margin-top: 0.8em;
+}
+.section5 .contact-card-img {
+  width: 230px;
+  height: 230px;
+  background: url(../images/qrcode_ex.PNG) no-repeat center center/100%;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

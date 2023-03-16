@@ -39,6 +39,7 @@ $ln-light-gray: #ebebeb;
 
 @mixin box-df {
     background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -412,4 +413,83 @@ $ln-light-gray: #ebebeb;
     }
 }
 
+/* section4 */
 
+/* section5 */
+.section5{
+    position: relative;
+    .bg{
+        width: 53em;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        .orangeCircle{
+            @include home-cir();
+            width: 25em;
+            height: 25em;
+            background: $orange;
+            top: 17%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .yellowCircle{
+            @include home-cir();
+            width: 25em;
+            height: 25em;
+            background: $yellow;
+            bottom: 7%;
+            right: 0;
+        }
+        .blueCircle{
+            @include blue-cir();
+            width: 28em;
+            height: 28em;
+            bottom: 7%;
+            left: 0;
+        }
+       
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            text-align: center;
+            margin-bottom: 1em;
+            color: $white;
+            font-size: 2.2em;
+        }
+        &-card{
+            @include box-df;
+            border-radius: 30px;
+            width: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4em;
+            &-info{
+                .myName{
+                    font-size: 2.2em;
+                    margin-bottom: 2.5em;
+                }
+                span{
+                    font-size: 1.1em;
+                    color: $txt8;
+                }
+                .phoneEmail{
+                    p{font-size: 1.3em;}
+                    .email{margin-top: 0.8em;}
+                }
+            }
+            &-img{
+                width: 230px;
+                height: 230px;
+                background: url(../images/qrcode_ex.PNG) no-repeat center center / 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+}

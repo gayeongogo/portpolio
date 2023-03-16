@@ -214,7 +214,6 @@ $ln-light-gray: #ebebeb;
     position: relative;
     .yellowCircle{
         @include home-cir;
-
         background: $yellow;
         top: 25%;
         left: 10%;
@@ -226,16 +225,15 @@ $ln-light-gray: #ebebeb;
     }
 }
 .about{
+    display: flex;
+    align-items: center;
     .about-main{
-        width: 100%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         
         &-desc{
-            flex-basis: 50%;
-            margin-top: -9em;
+            flex-basis: 40%;
             p{
                 font-family: 'NanumSquare';
                 &.desc1{
@@ -252,13 +250,13 @@ $ln-light-gray: #ebebeb;
         }
         &-info{
             display: flex;
-            flex-basis: 30%;
+            flex-basis: 48%;
             .infoImg{
                 @include dr-df;
                 width: 400px;
                 height: 400px;
                 position: relative;
-                margin: -10em -3em 0 ;
+                margin: -1em -3em 0 ;
                 margin-right: -3em;
                 transform: rotate(15deg);
                 background: url(../images/바다.jpg) no-repeat center center / 100%;
@@ -278,7 +276,7 @@ $ln-light-gray: #ebebeb;
                 background: $green;
                 transform: rotate(67deg);
                 position: relative;
-                margin-top: 12em;
+                margin-top: 20em;
                 .resume-text{
                     font-family: 'NanumSquare';
                     text-align: center;
@@ -301,8 +299,8 @@ $ln-light-gray: #ebebeb;
     .pinkEle{
         @include dr-df;
         position: absolute;
-        top: 17%;
-        left: 7%;
+        top: 20%;
+        left: 10%;
         background: $pink;
         width: 15em;
         height: 15em;

@@ -13,16 +13,17 @@
 
 .section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: #FFFDF6;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 80%;
   height: 100%;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding-top: 80px;
   position: relative;
   z-index: 1;
 }
@@ -268,57 +269,73 @@
 /* section3 */
 .section3 {
   position: relative;
-  /* .blueCircle{
-
-  } */
 }
 .section3 .pinkEle {
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   position: absolute;
-  top: 10%;
-  left: 3%;
+  top: 17%;
+  left: 7%;
   background: #FFDCDC;
   width: 15em;
   height: 15em;
   display: inline-block;
 }
+.section3 .blueCircle {
+  background: #95BFD4;
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  filter: blur(70px);
+  bottom: -7em;
+  right: 10em;
+}
 
 .skill {
-  padding: 7em 0;
+  display: flex;
+  align-items: center;
 }
 .skill-title {
   font-size: 2em;
+  margin-bottom: 1.2em;
+  text-align: center;
 }
 .skill-area {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .skill-area-main {
-  flex-basis: 45%;
+  flex-basis: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .skill-area-main .keywords ul {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
 }
 .skill-area-main .keywords ul li {
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #FFFFFF;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
   font-size: 20px;
-  margin-left: 10px;
-  padding: 5px 20px;
+  margin-right: 15px;
+  padding: 5px 25px;
   border-radius: 30px;
+  margin-bottom: 20px;
+}
+.skill-area-main .keywords ul li i {
+  font-size: 12px;
 }
 .skill-area-main .license {
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #FFFFFF;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 2em;
   margin-top: 1.5em;
 }
 .skill-area-main .license-title {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-bottom: 10px;
 }
 .skill-area-main .license ul li {
@@ -334,5 +351,42 @@
   color: #888888;
 }
 .skill-area-detail {
-  flex-basis: 45%;
+  flex-basis: 47%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+  height: 100%; */
+}
+.skill-area-detail .card {
+  flex-basis: 47%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  border-radius: 30px;
+}
+.skill-area-detail .card:nth-child(1) {
+  margin-bottom: 30px;
+}
+.skill-area-detail .card:nth-child(2) {
+  margin-bottom: 30px;
+}
+.skill-area-detail .card ul span {
+  display: inline-block;
+  background: #444444;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 5px 20px;
+  margin-left: -2.5em;
+  margin-bottom: 1em;
+}
+.skill-area-detail .card ul li {
+  font-family: "NanumSquare";
+  margin-bottom: 0.5em;
+}
+.skill-area-detail .card ul li:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

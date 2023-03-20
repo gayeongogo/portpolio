@@ -99,9 +99,11 @@ button {
   height: 16.2em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   background: #FF6B00;
   top: 28%;
   left: 38%;
+  z-index: 0;
 }
 .home .yellowCircle {
   border-radius: 50%;
@@ -109,9 +111,11 @@ button {
   height: 16.2em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   background: #FFD600;
   bottom: 28%;
   right: 38%;
+  z-index: 0;
 }
 .home .blueCircle {
   background: #95BFD4;
@@ -120,8 +124,10 @@ button {
   height: 20em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   bottom: -12%;
   left: 12%;
+  z-index: 0;
 }
 .home-main {
   text-align: center;
@@ -180,33 +186,31 @@ button {
 }
 
 /* section2 */
-.section2 {
-  position: relative;
+.about {
+  display: flex;
+  align-items: center;
 }
-.section2 .yellowCircle {
+.about .yellowCircle {
   border-radius: 50%;
   width: 16.2em;
   height: 16.2em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   background: #FFD600;
-  top: 25%;
-  left: 10%;
+  top: 22%;
+  left: 0;
 }
-.section2 .blueCircle {
+.about .blueCircle {
   background: #95BFD4;
   border-radius: 50%;
   width: 20em;
   height: 20em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   bottom: -15%;
   left: 35%;
-}
-
-.about {
-  display: flex;
-  align-items: center;
 }
 .about .about-main {
   display: flex;
@@ -214,24 +218,24 @@ button {
   justify-content: space-between;
 }
 .about .about-main-desc {
-  flex-basis: 40%;
+  text-align: center;
 }
 .about .about-main-desc p {
   font-family: "NanumSquare";
 }
 .about .about-main-desc p.desc1 {
-  margin-bottom: 3em;
-  font-size: 1.5em;
+  margin-bottom: 5em;
+  font-size: 1.7em;
   font-weight: 700;
   color: #333333;
 }
 .about .about-main-desc p.desc2 {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #333333;
 }
 .about .about-main-info {
   display: flex;
-  flex-basis: 48%;
+  margin-left: 10em;
 }
 .about .about-main-info .infoImg {
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
@@ -271,33 +275,31 @@ button {
 }
 
 /* section3 */
-.section3 {
-  position: relative;
+.skill {
+  display: flex;
+  align-items: center;
 }
-.section3 .pinkEle {
+.skill .pinkEle {
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  z-index: -1;
+  top: 15%;
+  left: 0;
   background: #FFDCDC;
   width: 15em;
   height: 15em;
   display: inline-block;
 }
-.section3 .blueCircle {
+.skill .blueCircle {
   background: #95BFD4;
   border-radius: 50%;
   width: 20em;
   height: 20em;
   position: absolute;
   filter: blur(70px);
-  bottom: -7em;
-  right: 10em;
-}
-
-.skill {
-  display: flex;
-  align-items: center;
+  z-index: -1;
+  bottom: 0;
+  right: -5%;
 }
 .skill-title {
   font-size: 2em;
@@ -407,6 +409,7 @@ button {
   height: 16.2em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   background: #FFD600;
   top: 10%;
   right: -7%;
@@ -418,6 +421,7 @@ button {
   height: 20em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   bottom: -15%;
   left: -10%;
 }
@@ -524,6 +528,7 @@ button {
   height: 16.2em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   width: 25em;
   height: 25em;
   background: #FF6B00;
@@ -537,6 +542,7 @@ button {
   height: 16.2em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   width: 25em;
   height: 25em;
   background: #FFD600;
@@ -550,6 +556,7 @@ button {
   height: 20em;
   position: absolute;
   filter: blur(70px);
+  z-index: -1;
   width: 28em;
   height: 28em;
   bottom: 7%;

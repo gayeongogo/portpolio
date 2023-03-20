@@ -20,12 +20,18 @@
 
 .container {
   max-width: 1280px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   padding-top: 80px;
   position: relative;
   z-index: 1;
+}
+
+button {
+  background: #444444;
+  padding: 10px 30px;
+  color: #FFFFFF;
 }
 
 .header {
@@ -132,10 +138,7 @@
   margin-bottom: 45px;
 }
 .home-main button {
-  background: #444444;
-  padding: 10px 30px;
   font-size: 25px;
-  color: #FFFFFF;
 }
 .home .aboutLink {
   width: 300px;
@@ -315,7 +318,7 @@
   text-align: center;
 }
 .skill-area-main .keywords ul li {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -330,7 +333,7 @@
   font-size: 12px;
 }
 .skill-area-main .license {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -360,15 +363,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2em;
-  height: 100%; */
 }
 .skill-area-detail .card {
   flex-basis: 47%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -399,6 +397,116 @@
 }
 
 /* section4 */
+.project {
+  display: flex;
+  align-items: center;
+}
+.project .bg .yellowCircle {
+  border-radius: 50%;
+  width: 16.2em;
+  height: 16.2em;
+  position: absolute;
+  filter: blur(70px);
+  background: #FFD600;
+  top: 10%;
+  right: -7%;
+}
+.project .bg .blueCircle {
+  background: #95BFD4;
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  filter: blur(70px);
+  bottom: -15%;
+  left: -10%;
+}
+.project-card {
+  width: 100%;
+  height: 35em;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 3em;
+  position: relative;
+}
+.project-card .project-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-card .project-cont .project-image img {
+  width: 30em;
+  margin-left: -7em;
+  margin-right: 5em;
+  /* background:  url(../images/대검.PNG) no-repeat center center / cover; */
+}
+.project-card .project-cont .project-desc {
+  color: #666666;
+}
+.project-card .project-cont .project-desc h1 {
+  font-size: 1.2em;
+  color: #888888;
+  margin-bottom: 10px;
+}
+.project-card .project-cont .project-desc h2 {
+  font-family: "NanumSquare";
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.project-card .project-cont .project-desc-skill ul {
+  display: flex;
+}
+.project-card .project-cont .project-desc-skill ul li {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 15px;
+  padding: 5px 25px;
+  border-radius: 30px;
+  margin-bottom: 2em;
+}
+.project-card .project-cont .project-desc-details {
+  font-family: "NanumSquare";
+  font-size: 18px;
+  margin-bottom: 2em;
+}
+.project-card .project-cont .project-desc-btn {
+  font-size: 1.2em;
+}
+.project-card .project-cont .slideDot {
+  margin-left: 5em;
+}
+.project-card .project-cont .slideDot ul li {
+  width: 12px;
+  height: 12px;
+  background: #FFFDF6;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.project-card .project-cont .slideDot ul li:not(:last-child) {
+  margin-bottom: 1em;
+}
+.project-card .project-cont .slideDot ul li.active {
+  width: 12px;
+  height: 30px;
+  border-radius: 30px;
+  background: #FF6B00;
+}
+.project-card .project-cont .slideDot ul li a {
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+}
+
 /* section5 */
 .section5 {
   position: relative;
@@ -460,7 +568,7 @@
   font-size: 2.2em;
 }
 .section5 .contact-card {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);

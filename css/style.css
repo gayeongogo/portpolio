@@ -20,7 +20,7 @@
 
 .container {
   max-width: 1280px;
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   padding-top: 80px;
@@ -71,10 +71,7 @@ button {
   display: flex;
 }
 .header-container .menu ul li {
-  margin-right: 100px;
-}
-.header-container .menu ul li:last-child {
-  margin-right: 0;
+  margin: 0 2em 0;
 }
 .header-container .side ul {
   display: flex;
@@ -82,16 +79,13 @@ button {
 .header-container .side ul li {
   font-size: 1.5em;
   color: #555555;
-}
-.header-container .side ul li:last-child {
   margin-left: 20px;
 }
-
 /* section1 */
 .home {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home .orangeCircle {
   border-radius: 50%;
@@ -102,8 +96,7 @@ button {
   z-index: -1;
   background: #FF6B00;
   top: 28%;
-  left: 38%;
-  z-index: 0;
+  left: 34%;
 }
 .home .yellowCircle {
   border-radius: 50%;
@@ -114,8 +107,7 @@ button {
   z-index: -1;
   background: #FFD600;
   bottom: 28%;
-  right: 38%;
-  z-index: 0;
+  right: 34%;
 }
 .home .blueCircle {
   background: #95BFD4;
@@ -127,55 +119,55 @@ button {
   z-index: -1;
   bottom: -12%;
   left: 12%;
-  z-index: 0;
 }
 .home-main {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-.home-main h1 {
+.home-main-text1 {
   color: #333333;
   font-weight: 400;
-  font-size: 80px;
-  letter-spacing: -0.03em;
-  margin-bottom: 45px;
+  font-size: 6em;
+  line-height: 115%;
+  margin-bottom: 10px;
+}
+.home-main-text2 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 1.5em;
 }
 .home-main button {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .home .aboutLink {
-  width: 300px;
-  height: 300px;
+  width: 18.7em;
+  height: 18.7em;
   background: url(../images/인생.png) no-repeat center center/100%;
-  top: 10%;
-  left: 10%;
+  top: 13%;
+  left: -5%;
   position: absolute;
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
 }
 .home .projectLink {
-  width: 200px;
-  height: 200px;
+  width: 12.5em;
+  height: 12.5em;
   background: #FFDCDC;
-  top: 25%;
-  right: 10%;
+  top: 30%;
+  right: -5%;
   transform: rotate(40deg);
   position: absolute;
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
 }
 .home .skillLink {
-  width: 150px;
-  height: 150px;
+  width: 9.4em;
+  height: 9.4em;
   background: #D5E8E2;
   bottom: 10%;
-  right: 25%;
+  right: 18%;
   transform: rotate(67deg);
   position: absolute;
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
 }
-.home p {
+.home .bottomText {
   font-family: "NanumSquare";
   position: absolute;
   bottom: 20px;
@@ -239,8 +231,8 @@ button {
 }
 .about .about-main-info .infoImg {
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
-  width: 400px;
-  height: 400px;
+  width: 26em;
+  height: 26em;
   position: relative;
   margin: -1em -3em 0;
   margin-right: -3em;
@@ -257,14 +249,14 @@ button {
 .about .about-main-info .resume {
   border-radius: 31% 69% 37% 63%/22% 49% 51% 78%;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 9em;
+  height: 9em;
   background: #D5E8E2;
   transform: rotate(67deg);
   position: relative;
   margin-top: 20em;
 }
-.about .about-main-info .resume .resume-text {
+.about .about-main-info .resume-text {
   font-family: "NanumSquare";
   text-align: center;
   position: absolute;
@@ -434,22 +426,24 @@ button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 3em;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .project-card .project-cont {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.project-card .project-cont .project-image {
+  margin: 0 5em 0 -7em;
+}
 .project-card .project-cont .project-image img {
   width: 30em;
-  margin-left: -7em;
-  margin-right: 5em;
   /* background:  url(../images/대검.PNG) no-repeat center center / cover; */
 }
 .project-card .project-cont .project-desc {
+  width: 100%;
   color: #666666;
 }
 .project-card .project-cont .project-desc h1 {
@@ -461,10 +455,12 @@ button {
   font-family: "NanumSquare";
   font-size: 1.8em;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.8em;
 }
 .project-card .project-cont .project-desc-skill ul {
+  margin-bottom: 2.8em;
   display: flex;
+  flex-wrap: wrap;
 }
 .project-card .project-cont .project-desc-skill ul li {
   background: rgba(255, 255, 255, 0.3);
@@ -474,9 +470,9 @@ button {
   display: inline-block;
   font-size: 1em;
   margin-right: 15px;
+  margin-bottom: 10px;
   padding: 5px 25px;
   border-radius: 30px;
-  margin-bottom: 2em;
 }
 .project-card .project-cont .project-desc-details {
   font-family: "NanumSquare";
@@ -486,26 +482,27 @@ button {
 .project-card .project-cont .project-desc-btn {
   font-size: 1.2em;
 }
-.project-card .project-cont .slideDot {
+.project-card .slideDot {
   margin-left: 5em;
 }
-.project-card .project-cont .slideDot ul li {
+.project-card .slideDot ul li {
   width: 12px;
   height: 12px;
   background: #FFFDF6;
   border-radius: 50%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.project-card .project-cont .slideDot ul li:not(:last-child) {
+.project-card .slideDot ul li:not(:last-child) {
   margin-bottom: 1em;
 }
-.project-card .project-cont .slideDot ul li.active {
+.project-card .slideDot ul li.active {
   width: 12px;
   height: 30px;
   border-radius: 30px;
   background: #FF6B00;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.project-card .project-cont .slideDot ul li a {
+.project-card .slideDot ul li a {
   width: inherit;
   height: inherit;
   cursor: pointer;
@@ -605,4 +602,182 @@ button {
   height: 230px;
   background: url(../images/qrcode_ex.PNG) no-repeat center center/100%;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1390px) {
+  .about .about-main-info {
+    margin-left: 5em;
+  }
+  .about .about-main-info .infoImg {
+    width: 23em;
+    height: 23em;
+  }
+  .about .about-main-info .resume {
+    width: 7em;
+    height: 7em;
+  }
+  .about .about-main-info .resume-text {
+    font-size: 14px;
+  }
+  .project-card {
+    height: auto;
+  }
+  .project-card .project-cont {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .project-card .project-cont .project-image {
+    margin: 0 0 2em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .home .aboutLink {
+    width: 15em;
+    height: 15em;
+  }
+  .home .projectLink {
+    width: 10em;
+    height: 10em;
+  }
+  .home .skillLink {
+    width: 7em;
+    height: 7em;
+  }
+  .home-main-text1 {
+    font-size: 5.5em;
+  }
+  .home-main-text2 {
+    font-size: 1.8em;
+  }
+  .home-main button {
+    font-size: 1.2em;
+  }
+  .skill-area {
+    flex-direction: column;
+  }
+  .skill-area-main .license {
+    margin-top: 0;
+    text-align: center;
+    padding: 1.2em 1.5em;
+  }
+  .skill-area-main .license ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skill-area-main .license ul li span {
+    display: block;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .skill-area-detail {
+    margin-top: 1.5em;
+  }
+  .skill-area-detail .card {
+    padding: 1.2em 1.5em;
+  }
+  .skill-title {
+    margin-bottom: 0.5em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .home .aboutLink {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .home .projectLink {
+    width: 8em;
+    height: 8em;
+  }
+  .home .skillLink {
+    width: 6em;
+    height: 6em;
+  }
+  .home-main-text1 {
+    font-size: 4.5em;
+  }
+  .home-main-text2 {
+    font-size: 1.8em;
+  }
+  .home-main button {
+    font-size: 1.2em;
+  }
+  .skill-area-main .keywords ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .skill-area-main .license {
+    margin-top: 5px;
+  }
+  .skill-area-main .license-title {
+    font-size: 1.2em;
+  }
+  .skill-area-main .license ul li {
+    font-size: 15px;
+  }
+  .skill-area-main .license ul li span {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+  .skill-area-detail .card ul span {
+    font-size: 1em;
+  }
+  .skill-area-detail .card ul li {
+    font-size: 14px;
+  }
+  .skill-title {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 930px) {
+  .about .about-main {
+    flex-direction: column;
+  }
+  .about .about-main-desc {
+    order: 2;
+  }
+  .about .about-main-desc p.desc1 {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .about .about-main-info {
+    margin-left: 0;
+    order: 1;
+  }
+  .about .about-main-info .resume {
+    margin-top: 18.5em;
+  }
+}
+@media screen and (max-width: 850px) {
+  .project-card .project-cont {
+    width: 100%;
+    height: 100%;
+  }
+  .project-card .project-cont .project-image img {
+    width: 100%;
+  }
+  .project-card .slideDot {
+    margin-left: 3em;
+  }
+}
+@media screen and (max-width: 560px) {
+  .about .about-main-desc p.desc1 {
+    font-size: 1.5em;
+  }
+  .about .about-main-desc p.desc2 {
+    font-size: 1em;
+  }
+  .about .about-main-info .infoImg {
+    width: 19em;
+    height: 19em;
+  }
+  .about .about-main-info .resume {
+    margin-top: 16em;
+    width: 6em;
+    height: 6em;
+  }
+  .about .about-main-info .resume-text {
+    font-size: 14px;
+    top: 33%;
+    left: 21%;
+  }
 }/*# sourceMappingURL=style.css.map */

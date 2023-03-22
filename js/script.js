@@ -32,15 +32,22 @@ setInterval(typing, 200); */
 
 
 //메뉴 고정
-/* 
-const section2 = document.querySelector('.section2');
-const section2Top = section2.getBoundingClientRect().top + window.scrollY;
+
+/* const section1 = document.querySelector('.section1');
+const section1Top = section1.getBoundingClientRect().top + window.scrollY;
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', function() {
-    if(this.window.scrollY>=section2Top) {
+    if(this.window.scrollY>=section1Top) {
         header.classList.add('fixed');
     }else{
         header.classList.remove('fixed');
     }
-}) */
+})
+ */
+
+//app-btn
+$('.app-btn').on({click:function(){
+    $('.bar').toggleClass('add');
+    $('.mobile-nav').stop().slideToggle(500);
+}});

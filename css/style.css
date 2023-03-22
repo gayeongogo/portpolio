@@ -780,4 +780,28 @@ button {
     top: 33%;
     left: 21%;
   }
+  .project-card {
+    padding: 1.5em;
+  }
+  .project-card .project-cont .project-image img {
+    width: 100%;
+  }
+  .project-card .project-cont .project-desc h1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .project-card .project-cont .project-desc h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .project-card .project-cont .project-desc-skill ul {
+    margin-bottom: 2em;
+  }
+  .project-card .project-cont .project-desc-details {
+    font-size: 15px;
+    margin-bottom: 2em;
+  }
+  .project-card .slideDot {
+    margin-left: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */

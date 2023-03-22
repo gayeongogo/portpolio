@@ -851,6 +851,54 @@ button{
             }
         }
     }
+    .project{
+        &-card{
+            padding: 1.5em;
+            .project-cont{
+                .project-image{
+
+                    img{
+                        width: 100%;
+                    }
+                }
+                .project-desc{
+                    h1{
+                        font-size: 1em;
+                        margin-bottom: 10px;
+                    }
+                    h2{
+                        font-size: 1.5em;
+                        margin-bottom: 0.8em;   
+                    }
+                    &-skill{
+                        ul{
+                            margin-bottom: 2em;
+                            li{
+
+                            }
+                        }
+                    }
+                    &-details{
+                        font-size: 15px;
+                        margin-bottom: 2em;
+                    }
+                    &-btn{
+                    }
+                }
+            }
+            .slideDot{
+                margin-left: 1em;
+                ul{
+                    li{
+                        a{
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+    }
 }
 
 

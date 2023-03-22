@@ -890,6 +890,22 @@ button{
         }
     }
 }
+@media screen and (max-width: 730px){
+    .home{
+        .aboutLink{
+            width: 10em;
+            height: 10em;
+        }
+        .projectLink{
+            width: 8em;
+            height: 8em;
+        }
+        .skillLink{
+            width: 6em;
+            height: 6em;
+        }
+    }
+}
 @media screen and (max-width: 560px){
     .about{
         .about-main{

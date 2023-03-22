@@ -861,6 +861,20 @@ button {
     margin-left: 3em;
   }
 }
+@media screen and (max-width: 730px) {
+  .home .aboutLink {
+    width: 10em;
+    height: 10em;
+  }
+  .home .projectLink {
+    width: 8em;
+    height: 8em;
+  }
+  .home .skillLink {
+    width: 6em;
+    height: 6em;
+  }
+}
 @media screen and (max-width: 560px) {
   .about .about-main-desc p.desc1 {
     font-size: 1.5em;
